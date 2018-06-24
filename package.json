@@ -1,0 +1,27 @@
+{
+  "name": "spotify-oauth-backend",
+  "version": "1.0.0",
+  "description": "A backend application, hosted on Heroku used to authorise Spotify users. It utilizes the Spotify OAuth API",
+  "main": "server.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha --colors --timeout 5000 test.js || true",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "spotify",
+    "restful",
+    "api"
+  ],
+  "author": "Jessica Barclay",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "querystring": "^0.2.0",
+    "request": "^2.87.0",
+    "supertest": "^3.1.0"
+  }
+}
