@@ -2,6 +2,7 @@
   "name": "spotify-oauth-backend",
   "version": "1.0.0",
   "description": "A backend application, hosted on Heroku used to authorise Spotify users. It utilizes the Spotify OAuth API",
+  "repository": "https://github.com/JessicaBarclay/spotify-oauth-backend",
   "main": "server.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/_mocha --colors --timeout 5000 test.js || true",
