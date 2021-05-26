@@ -1,8 +1,12 @@
+<p align="center">
+    <a href="https://github.com/JessicaBarclay/spotify-oauth-backend">
+        <img src="https://raw.githubusercontent.com/jessicabarclay/spotify-oauth-backend/master/media/spotify-log-in.png" alt="Spotify Log in" width="200">
+    </a>
+</p>
+
 # Spotify OAuth backend application
 
 This is a Node.js Express application that utilizes the Spotify OAuth API, to log users in and redirect to a given URI that would be a frontend application. Thus, allowing you to make the use of the Spotify APIs in your frontend application.
-
-
 
 #### Run application locally
 
