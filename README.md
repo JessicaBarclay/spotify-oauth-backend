@@ -18,7 +18,7 @@ npm install
 
 This application assumes you have a frontend application running on port http://localhost:3000 
 
-After following the coming steps, this application will run on http://localhost:8888 and visiting http://localhost:8888/login will redirect to http://localhost:3000?access_token=12345 with a Spotify access_token in the query string.
+After following the below steps, this application will run on http://localhost:8888 and visiting http://localhost:8888/login will redirect to http://localhost:3000?access_token=12345 with a Spotify access_token in the query string.
 
 
 
@@ -33,8 +33,6 @@ Then, add http://localhost:8888 as the **Website**, and http://localhost:8888/ca
 **IMPORTANT** you must scroll down and click save for these changes to take affect.
 
 Make note of your Client ID and your Client Secret, but do not expose the Client Secret such as commiting it. We will set them up in the next step.
-
-
 
 #### Allow application to use Spotify credentials, without exposing them
 
@@ -62,8 +60,6 @@ To make use of this application in a hosted frontend application, you will also 
 
 Ensure you have the **Heroku CLI tools** installed on your machine. This stage also assumes you have deployed your frontend application(which you can also do via Heroku!)
 
-
-
 Replace `name-of-backend-app` with a name of your choice.
 
 ```
@@ -79,8 +75,6 @@ heroku config:set FRONTEND_URI=https://name-of-frontend-app.herokuapp.com
 
 git push heroku master
 ```
-
-
 
 ## Important final steps
 
@@ -98,13 +92,9 @@ Then add https://name-of-backend-app.herokuapp.com/callback as a **Redirect URI*
 
 Now you can to go to your backend Heroku app http://name-of-backend-app.herokuapp.com/login and it will redirect to your frontend Heroku app http://name-of-frontend-app.herokuapp.com?access_token=XYZ 
 
-
-
 #### How might you use the access token in your frontend application, to make use of the Spotify APIs?
 
 Within your frontend application, you could have a login button(or similar) with does a `GET` request to http://name-of-backend-app.herokuapp.com/login Then you can go ahead and pull the `access_token` out of the query string from the response and use it to call out to the Spotify API services elsewhere in your app.
-
-
 
 ##### Credit
 
