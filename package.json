@@ -18,11 +18,9 @@
   "author": "Jessica Barclay",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.4",
     "express": "^4.17.1",
     "mocha": "^8.4.0",
     "querystring": "^0.2.1",
-    "request": "^2.88.2",
-    "supertest": "^6.1.3"
+    "request": "^2.88.2"
   }
 }
