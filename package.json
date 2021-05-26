@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "mocha": "^5.2.0",
     "querystring": "^0.2.0",
     "request": "^2.87.0"
   }
